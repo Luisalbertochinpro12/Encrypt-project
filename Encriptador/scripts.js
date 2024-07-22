@@ -50,7 +50,7 @@ function copyText() {
 function encript_function () {
     text = getText();
     if (text === "") {
-        alert("No hay ningún texto que para encriptar o desencriptar")
+        alert("No hay ningún texto que para encriptar")
     } else {
         let letters = text.split("");
         let word_encript = [];
@@ -70,12 +70,17 @@ function encript_function () {
 
 function desencript_function () {
         text = getText()
-        word_desencript = text.replace(/ai/g, "a")
-        .replace(/enter/g , "e")
-        .replace(/imes/g , "i")
-        .replace(/ober/g, "o")
-        .replace(/ufat/g, "u")
-        setText(word_desencript)
+        if (text === "") {
+            alert("No hay ningún texto que para desencriptar") 
+        } else {
+            word_desencript = text.replace(/ai/g, "a")
+            .replace(/enter/g , "e")
+            .replace(/imes/g , "i")
+            .replace(/ober/g, "o")
+            .replace(/ufat/g, "u")
+            setText(word_desencript)
+        }
+        
 }
 
 
