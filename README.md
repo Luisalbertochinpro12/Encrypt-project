@@ -1,5 +1,5 @@
-# Proyecto "Encriptador" 👾
-# Descripción del proyecto ✨:
+# -Proyecto "Encriptador" 👾
+# -Descripción del proyecto ✨:
 Este es un programa el cual nos ayuda a encriptar y/o desencriptar palabras, haciendo que nadie sepa que es lo que realmente estamos diciendo o que es lo que queremos decir.
 
 ![image](https://github.com/user-attachments/assets/c6b576c7-2daa-44b9-a778-8af437bb0688)
@@ -21,7 +21,7 @@ Este es un programa el cual nos ayuda a encriptar y/o desencriptar palabras, hac
 
 ![image](https://github.com/user-attachments/assets/abc436d7-8797-4542-98b6-90685b8926d7)
 
-# Detalles del programa 🤖:
+# -Detalles del programa 🤖:
 La encriptación de las palabras sigue una lógica, donde solo las vocales son aquellas que serán cambiadas, la lógica es la siguiente:
     "a" es convertida para "ai"
     "e" es convertida para "enter" 
@@ -29,7 +29,7 @@ La encriptación de las palabras sigue una lógica, donde solo las vocales son a
     "o" es convertida para "ober"
     "u" es convertida para "ufat"
     
-**Ejemplo:**
+**-Ejemplo:**
 Si el usuario digita la palabra *gato* 😺, se espera que el resultado sea *gaitober* 🐶
 
 
