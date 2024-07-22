@@ -2,6 +2,10 @@
     font-family: 'Inter', sans-serif;
 }
 
+body {
+    background-color: #F3F5FC;
+}
+
 .main-container {
     display: flex;
 }
@@ -17,9 +21,7 @@
     color: #0A3871;
 }
 
-body {
-    background-color: #F3F5FC;
-}
+
 
 .img-boy {
     margin-top: 150px;
@@ -147,6 +149,51 @@ body {
     justify-content: center;
     text-align: center;
 }
+
+.data-show {
+    width: 100%;
+    background-color: #0A3871;
+    padding: 0 0 1em 0;
+}
+
+#autor-name {
+    font-size: 16px;
+    color: #ffffff;
+    padding: 10px 0 0 0 ;
+    margin: 10px 0 10px 10px;
+}
+
+.social-media-container {
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+}
+
+#first-social-media {
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 10px;
+}
+
+.social-media-link {
+    text-decoration: none;
+    color: #FFFFFF;
+    margin: 5px 0 0 10px;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 50px;
+}
+
+.img-social-media {
+    width: 32px;
+    height: 32px;
+    background-color: #FFFFFF;
+    border-radius: 7px;
+}
+
 
 
 
