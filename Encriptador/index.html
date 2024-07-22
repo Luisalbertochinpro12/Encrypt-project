@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <title>Encriptador</title>
+</head>
+<body>
+    <div class="main-container">
+    <!-- Elemento donde ingresamos el texto y están los botones 'Encriptar' y 'Desencriptar'-->
+        <div class="text-org">
+            <img src="./Recursos/Logo.png" alt="Logo de alura" width="120px" height="48px">
+            <div class="header-text">
+                Texto original
+            </div>
+            <textarea name="text-input" id="text-area-main" placeholder="Ingrese su texto aquí"></textarea>
+
+            <!-- Contenedor donde están los dos botones -->
+            <div class="button-container">
+                <button class="encrypt-btn" onclick="encript_function();"> Encriptar</button>
+                <button class="desencrypt-btn" onclick="desencript_function();"> Desencriptar </button>
+                <div class="footer-text">  
+                    <p> 
+                        <img src="./Recursos/Admiration-mark.png" alt="Signo de advertencia" width="16px"
+                        height="16px"> 
+                        Solo letras minúsculas y sin acentos
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Elemento donde se muestra el desencriptado -->
+        <div class="text-new">
+            <div class="header-text-new">
+                Texto encriptado
+            </div>
+            <div class="text-encrypt-container">
+                <div class="text-encrypt">
+                    <p class="text"> 
+                        <b>
+                            Ningún mensaje fue encontrado
+                        </b> 
+                    </p>
+                    <p class="footer-text-encrypt">
+                        Ingresa el texto que desees encriptar o desencriptar
+                    </p>
+                </div>
+            </div>
+            <div class="copy-button-container">
+                <button class="copy-btn" onclick="copyText()">
+                    Copiar
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Aquí irán mis datos JIJIJI-->
+    <div class="data-show">
+        <p> Creador: Luis Alberto Gil Ortega </p>
+    </div>
+
+    <script src="./scripts.js">
+
+    </script>
+</body>
+</html>
