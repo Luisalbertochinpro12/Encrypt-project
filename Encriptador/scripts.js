@@ -16,14 +16,28 @@ let letter_conv = {
 };
 
 function getText () {
-    const textarea = document.querySelector(`#textAreaMain`);
+    const textarea = document.querySelector(`#text-area-main`);
     const text = textarea.value;
     return text;
 }
 
 function setText (text) {
-    divText = document.querySelector(`#text-desencript-container`);
-    divText.textContent = text
+    divText = document.querySelector(`.text-encrypt-container`);
+    copybtn = document.querySelector(`.copy-btn`)
+
+    divText.textContent = text;
+    divText.style.display = "flex";
+    divText.style.padding = "30px 0 0 29px";
+    divText.style.fontSize = "30px";
+    divText.style.color = "#495057"
+    divText.style.width = "600px";
+    divText.style.heigth = "650px";
+    divText.style.boxSizing = "border-box";
+
+    copybtn.style.cursor = "copy";
+    copybtn.style.backgroundColor = "white";
+    copybtn.style.color = "#0A3871";
+    copybtn.style.borderColor = "#0A3871";
 }
 
 function copyText() {
@@ -35,19 +49,23 @@ function copyText() {
 
 function encript_function () {
     text = getText();
-    let letters = text.split("");
-    let word_encript = [];
+    if (text === "") {
+        alert("No hay ningún texto que para encriptar o desencriptar")
+    } else {
+        let letters = text.split("");
+        let word_encript = [];
 
-    letters.forEach (letters => {
-        if (letter_conv[letters]) {
-            word_encript.push(letter_conv[letters]);
-        } else {
-            word_encript.push(letters);
-        }
-    })
-    setText(`${word_encript.join("")}`);
+        letters.forEach (letters => {
+            if (letter_conv[letters]) {
+                word_encript.push(letter_conv[letters]);
+            } else {
+                word_encript.push(letters);
+            }
+        })
+        setText(`${word_encript.join("")}`);
 
-    return (`${word_encript.join("")}`);
+        return (`${word_encript.join("")}`);
+    }
 }
 
 function desencript_function () {
