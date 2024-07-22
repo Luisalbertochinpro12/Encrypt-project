@@ -18,7 +18,7 @@ let letter_conv = {
 function getText () {
     const textarea = document.querySelector(`#text-area-main`);
     const text = textarea.value;
-    return text;
+    return text.toLowerCase();
 }
 
 function setText (text) {
@@ -27,7 +27,7 @@ function setText (text) {
 
     divText.textContent = text;
     divText.style.display = "flex";
-    divText.style.padding = "30px 0 0 29px";
+    divText.style.padding = "30px 20px 0 29px";
     divText.style.fontSize = "30px";
     divText.style.color = "#495057"
     divText.style.width = "600px";
