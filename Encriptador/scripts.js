@@ -38,10 +38,20 @@ function setText (text) {
     copybtn.style.backgroundColor = "white";
     copybtn.style.color = "#0A3871";
     copybtn.style.borderColor = "#0A3871";
+
+    copybtn.addEventListener('mouseover', function() {
+        copybtn.style.backgroundColor = '#D8DFE8';
+        copybtn.style.color = '#1155a8';
+    });
+
+    copybtn.addEventListener('mouseout', function() {
+        copybtn.style.backgroundColor = 'white';
+        copybtn.style.color = '#0A3871';
+    });
 }
 
 function copyText() {
-    let divText = document.querySelector(`#text-desencript-container`);
+    let divText = document.querySelector(`.text-encrypt-container`);
     let copiedText = divText.innerText || divText.textContent;
     navigator.clipboard.writeText(copiedText);
 }

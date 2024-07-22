@@ -116,6 +116,9 @@ body {
     color: #CACACA;
     border-color: #CACACA;
     border: 1px solid #CACACA;
+    transition: 
+        background-color 0.3s ease,
+        color 0.3s ease;
 }
 
 .copy-btn:hover {
