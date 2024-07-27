@@ -11,37 +11,33 @@
     <title>Encriptador</title>
 </head>
 <body>
-    <div class="main-container">
+    <div class="main-container">        
     <!-- Elemento donde ingresamos el texto y están los botones 'Encriptar' y 'Desencriptar'-->
-        <div class="text-org">
-            <img src="./Recursos/Logo.png" alt="Logo de alura" width="120px" height="48px">
-            <div class="header-text">
+        <img src="./Recursos/Logo.png" alt="">
+        <section class="text-org">
+            <p>
                 Texto original
-            </div>
-            <textarea name="text-input" id="text-area-main" placeholder="Ingrese su texto aquí"></textarea>
-
+            </p>    
+            <textarea name="text-input" placeholder="Ingrese su texto aquí" ></textarea>
             <!-- Contenedor donde están los dos botones -->
-            <div class="button-container">
+            <section class="button-container">
                 <button class="encrypt-btn" onclick="encript_function();"> Encriptar</button>
                 <button class="desencrypt-btn" onclick="desencript_function();"> Desencriptar </button>
-                <div class="footer-text">  
-                    <p> 
-                        <img src="./Recursos/Admiration-mark.png" alt="Signo de advertencia" width="16px"
-                        height="16px"> 
-                        Solo letras minúsculas y sin acentos
-                    </p>
-                </div>
-            </div>
-            
-        </div>
+                    <section class="footer-text">  
+                        <p> 
+                            <img src="./Recursos/Admiration-mark.png" alt="Signo de advertencia" width="16px"
+                            height="16px"> 
+                            Solo letras minúsculas y sin acentos
+                        </p>
+                    </section>
+            </section>
+        </section>
 
         <!-- Elemento donde se muestra el desencriptado -->
-        <div class="text-new">
-            <div class="header-text-new">
-                Texto encriptado
-            </div>
-            <div class="text-encrypt-container">
-                <div class="text-encrypt">
+        <section class="text-new">
+                <p>Texto encriptado / desencriptado</p>
+            <section class="text-encrypt-container">
+                <section class="text-encrypt">
                     <p class="text"> 
                         <b>
                             Ningún mensaje fue encontrado
@@ -50,17 +46,20 @@
                     <p class="footer-text-encrypt">
                         Ingresa el texto que desees encriptar o desencriptar
                     </p>
-                </div>
+                </section>
                 <img class="img-boy" src="./Recursos/Chico-lupa.png" alt="Chico con una lupa" width="200px" height="180px">
-            </div>
+            </section>
             <div class="copy-button-container">
                 <button class="copy-btn" onclick="copyText()">
                     Copiar
                 </button>
             </div>
-        </div>
+        </section>
     </div>
+
+
     <!-- Aquí irán mis datos JIJIJI-->
+    <!--
     <div class="data-show">
         <p id="autor-name"> Creador: Luis Alberto Gil Ortega </p>
         <p id="autor-name"> Redes sociales </p>
@@ -86,9 +85,8 @@
                 <a class="social-media-link" href="https://www.facebook.com/lewichine/"> Facebook</a>
             </div>
         </div>
-        
     </div>
-
+    -->
     <script src="./scripts.js">
 
     </script>
