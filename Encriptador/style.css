@@ -43,7 +43,7 @@ body {
 .text-org p {
     margin-bottom: 1vh;
     width: 100%;
-    font-size: 2em;
+    font-size: 2.5vw;
     color: #0A3871;
     box-sizing: border-box;
 }
@@ -133,7 +133,7 @@ body {
 .text-new p {
     margin-bottom: 1vh;
     width: 100%;
-    font-size: 3.5vh;
+    font-size: 2.4vw;
     color: #0A3871;
     box-sizing: border-box;
 }
@@ -157,14 +157,14 @@ body {
 }
 
 .text-new .text-encrypt-container .text-encrypt p {
-    font-size: 24px;
+    font-size: 2vw;
     color: #343A40;
     border: none;
     box-sizing: border-box;
 }
 
 .text-new .text-encrypt-container .text-encrypt .footer-text-encrypt {
-    font-size: 13px;
+    font-size: 1vw;
     color: #343A40;
     border: none;
     box-sizing: border-box;
@@ -172,14 +172,16 @@ body {
 
 .text-new .copy-button-container {
     margin: 3vh 0;
+    display: flex;
     text-align: center;
+    justify-content: center;
     width: 100%;
-    height: 15%;
+    height: 16%;
 }
 
 .text-new .copy-button-container .copy-btn {
     background-color: #F3F5FC;
-    height: 71%;
+    height: 100%;
     width: 48%;
     border-radius: 24px;
     font-size: 16px;
