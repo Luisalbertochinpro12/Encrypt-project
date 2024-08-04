@@ -59,6 +59,7 @@ body {
     box-shadow: 0px 3px 3px gray;
     box-sizing: border-box;
     margin: 0;
+    font-size: large;
 } 
 
 .text-org .button-container {
@@ -150,6 +151,7 @@ body {
     text-align: center;
     background-color: #FFFFFF;
 }
+
 
 .text-new .text-encrypt-container .text-encrypt {
     margin: 30vh 0 0;
@@ -255,13 +257,81 @@ body {
 /*Para dispositivos con pantallas de 780 pixeles*/
 @media screen and (max-width:780px){
     .main-container {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 1200px;
     }
 
-    #text-area-main {
-        width: 690px;
-        height: 648px;
-        margin:  40px ;
+    .text-org {
+        width: 95%;
+        height: 180%;
     }
+
+    .text-org .text-org-header {
+        display: none;
+    }
+
+    .text-org textarea {
+        height: 100%;
+    }
+
+    .text-new {
+        width: 95%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding: 1.5vh 1.5vw;
+    }
+
+    .text-new .header-text-new {
+        display: none;
+    }
+
+
+    .text-new .text-encrypt-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 35%;
+        padding: 2vh 2vw;
+        border-radius: 24px;
+        border: 1px solid #FFFFFF;
+        resize: none;
+        box-shadow: 0px 3px 3px gray;
+        box-sizing: border-box;
+        text-align: center;
+        background-color: #FFFFFF;
+        font-size: large;
+    }
+
+    .text-new .text-encrypt {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
+    .text-new .text-encrypt-container img {
+        display: none;
+    }
+
+    .text-new .text-encrypt-container .text-encrypt {
+        margin: 2vh 0 0;
+        box-sizing: border-box;
+    }
+
+    .text-new .text-encrypt-container .text-encrypt p {
+        font-size: 2.3vw;
+        color: #343A40;
+        border: none;
+        box-sizing: border-box;
+    }
+
+    .text-new .copy-button-container {
+        display: none;
+    }
+    
     
 }
