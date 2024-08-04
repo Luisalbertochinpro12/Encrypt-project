@@ -8,11 +8,22 @@ body {
     background-color: #F3F5FC;
 }
 
+h1 {
+    text-align: center;
+    color: #0A3871;
+}
+
 .logo {
     border: 2px solid black;
     border-radius: 50%;
-    width: 1.5vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(133, 1, 133);
+    color: #FFFFFF;
+    width: 30px;
+    height: 30px;
     text-align: center;
+    justify-content: center;
+    display: block;
     margin: 1.5vh 0 0 1.5vw;
 }
 
@@ -126,6 +137,7 @@ body {
     width: 45%;
     height: 100%;
     display: flex;
+    padding: 1.5vh;
     flex-direction: column;
     box-sizing: border-box;
     padding: 1.5vh 1.5vw;
@@ -224,7 +236,7 @@ body {
 
 .social-media-container {
     display: flex;
-    width: 400px;
+    width: 75%;
     justify-content: space-between;
 }
 
@@ -331,6 +343,16 @@ body {
 
     .text-new .copy-button-container {
         display: none;
+    }
+
+    .social-media-container {
+        display: table;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .social-media {
+        margin: 3px 0 0 10px;
     }
     
     
